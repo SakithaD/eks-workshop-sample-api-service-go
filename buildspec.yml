@@ -7,7 +7,7 @@ phases:
       - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
       - add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu `lsb_release -cs` test"
       - apt-get update
-      - apt-get install docker-ce
+      - apt-get install docker-ce -y
       - docker -v
       - docker run hello-world
       - curl -sS -o aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.10.3/2018-07-26/bin/linux/amd64/aws-iam-authenticator
